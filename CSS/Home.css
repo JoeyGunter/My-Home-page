@@ -1,0 +1,114 @@
+/*
+Author: Joseph Michael Gunter
+Date: 22/01/2017 (dd/mm/yyyy)
+Description: This is my first website with the hope that will evolve into my portfolio.
+*/
+
+/* Below is my CSS Reset, it is currently an unedite verison of Eric Meyers CSS Reset. Will try to link this soon*/
+@import url("css-reset.css");
+
+/* for the side margins */
+.edge-color{
+    background: rgba(230,230,230,1);    
+}
+
+.margin{
+    /* absolute makes it easy to locate where you want the div, relative to what it is contained in */
+    position: absolute;
+    /* next 5 lines causes the element to be centralised */
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin: 0 auto 0 auto;
+    /* size of the element (therefore will be as wide as the top image */
+    width: 799px;
+    height: 100%;
+    /* a white background fully opaque */
+    background: rgba(255,255,255,1);
+    /* offset-x | offset-y | blur-radius (higher makes it a more gradual blend) | spread-radius (how long you want full color until the blend starts) | color (at the edge - this then goes to complete transparency) */
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, .5);
+    z-index: -1;
+}
+
+.all-text{
+    font-family: "Lucida Sans", Arial;
+}
+
+.top-image{
+	display: block;
+    z-index: +1;
+}
+
+table.heading{
+    position: absolute;
+	top: 300px;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: +3;
+    background: rgba(0,0,0,.5);
+    color:white;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td.large{
+    border-bottom: solid 2px white;
+    font-size: 25px;
+    padding: 5px;
+}
+
+td.small{ 
+    font-size: 15px;
+    padding: 1px 0 10px 0;
+}
+
+.contents-bar{
+	text-align: center;
+    width: 100%;
+    height: 100px;
+    z-index: +1;
+}
+
+ul{
+	margin: 0 auto;
+/* these 3 rows will postion anything in the middle vertically */
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+li{
+	display: inline-block;
+	background: rgba(0,0,0,.25);
+	border-radius: 50%;
+	width:90px;
+	height:90px;
+	line-height: 90px;
+	color: black;
+}
+li:hover{
+    	background: rgba(0,0,0,.25);
+        animation: fader .5s forwards;
+}
+@keyframes fader{
+    from{background: rgba(0,0,0,.25);}
+    to{background: rgba(0,0,0,.5);}
+    
+}
+
+.box-shadow{
+    /* offset-x | offset-y | blur-radius (higher makes it a more gradual blend) | spread-radius (how long you want full color until the blend starts) | color (at the edge - this then goes to complete transparency) */
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
+}
+
+#bottom-fix{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 50%;
+	right: 50%;
+	margin: 0 auto;
+}
+
