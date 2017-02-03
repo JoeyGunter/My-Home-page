@@ -5,7 +5,7 @@ Description: This is my first website with the hope that will evolve into my por
 */
 
 /* Below is my CSS Reset, it is currently an unedite verison of Eric Meyers CSS Reset. Will try to link this soon*/
-@import url("css-reset.css");
+@import url("CSS-Reset.css");
 
 /* for the side margins */
 .edge-color{
